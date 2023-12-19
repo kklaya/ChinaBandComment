@@ -20,7 +20,7 @@ public class TestAutoGenerate {
         // Step2：全局配置
         GlobalConfig gc = new GlobalConfig();
         // 填写代码生成的目录(需要修改)
-        String projectPath = "C:\\Users\\Administrator\\Desktop\\my_demo\\learning-demo\\bondNew";
+        String projectPath = "C:\\Users\\Administrator\\Desktop\\\\project\\\\ChinaBandComment\\bondNew";
         // 拼接出代码最终输出的目录
         gc.setOutputDir(projectPath + "/src/main/java");
         // 配置开发者信息（可选）（需要修改）
@@ -42,8 +42,8 @@ public class TestAutoGenerate {
         // Step3：数据源配置（需要修改）
         DataSourceConfig dsc = new DataSourceConfig();
         // 配置数据库 url 地址
-        dsc.setUrl("jdbc:mysql://120.27.149.42:3306/testMyBatisPlus?useUnicode=true&characterEncoding=utf8");
-        // dsc.setSchemaName("testMyBatisPlus"); // 可以直接在 url 中指定数据库名
+        dsc.setUrl("jdbc:mysql://120.27.149.42:3306/band?useUnicode=true&characterEncoding=utf8");
+//         dsc.setSchemaName("band"); // 可以直接在 url 中指定数据库名
         // 配置数据库驱动
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         // 配置数据库连接用户名
@@ -71,7 +71,7 @@ public class TestAutoGenerate {
         // Step5：策略配置（数据库表配置）
         StrategyConfig strategy = new StrategyConfig();
         // 指定表名（可以同时操作多个表，使用 , 隔开）（需要修改）
-        strategy.setInclude("bond");
+        strategy.setInclude("band_data");
         // 配置数据表与实体类名之间映射的策略
         strategy.setNaming(NamingStrategy.underline_to_camel);
         // 配置数据表的字段与实体类的属性名之间映射的策略

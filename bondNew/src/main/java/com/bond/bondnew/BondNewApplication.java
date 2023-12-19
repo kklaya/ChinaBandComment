@@ -10,5 +10,4 @@ public class BondNewApplication {
     public static void main(String[] args) {
         SpringApplication.run(BondNewApplication.class, args);
     }
-
 }
